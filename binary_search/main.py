@@ -15,8 +15,8 @@ lista = list(range(1, 11))
 
 
 def binarySearch(target):
-    baixo = 0  # Vamos pegar o 1 elemnto da lista
-    alto = len(lista) - 1  # Vamos pegar o ultimo elemento da lista
+    baixo = 0
+    alto = len(lista) - 1
 
     etapas = 0
 
@@ -24,7 +24,7 @@ def binarySearch(target):
         print(f"Etapas da busca binaria: {etapas}")
         etapas = etapas + 1
 
-        head_index = (baixo + alto) // 2  # o head vai apontar para o meio da lista
+        head_index = (baixo + alto) // 2
         head = lista[head_index]
 
         if head == target:
